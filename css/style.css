@@ -64,8 +64,8 @@ section {
 #status {
     background-image: url("../img/preloader/preloader.gif");
     background-repeat: no-repeat;
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 150px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -126,7 +126,7 @@ section {
 }
 
 #home-heading h1 {
-    color: red;
+    color: #007f00;
     font-size: 65px;
     font-weight: 500;
     text-transform: uppercase;
@@ -144,7 +144,7 @@ section {
 }
 
 #home-heading span {
-    color: green;
+    color: red;
   
 }
 
@@ -200,6 +200,8 @@ section {
     color: red;
     background-color: #fff;
     border: 1px solid red;
+    font-weight: 900;
+
 }
 
 .btn-white {
@@ -320,7 +322,7 @@ section {
 
 .horizontal-heading h5 {
     font-size: 16px;
-    color: #0040ff;
+    color: red;
     text-transform: uppercase;
     display: inline-block;
     margin-bottom: 10px;
@@ -589,25 +591,24 @@ ul.social-list li:nth-child(3) a:hover {
 ============================================ */
 
 #statement {
+    
     background: url("../img/tech/tech-statement.jpg") no-repeat fixed center;
     background-size: cover;
+
+    
 }
 
 #statement .content-box-lg {
+
     background: rgba(0, 0, 0, 0.3);
+
 }
 
 #tech-statement h3 {
     color: #fff;
     font-size: 28px;
     line-height: 45px;
-}
 
-#tech-statement p {
-    font-size: 14px;
-    color: #0040ff;
-    font-family: "Raleway", sans-serif;
-    margin-top: 8px;
 }
 
 
@@ -616,7 +617,7 @@ ul.social-list li:nth-child(3) a:hover {
 ============================================ */
 
 #services-01 img {
-    margin: 60px 0;
+   
 }
 
 .service {
@@ -631,7 +632,7 @@ ul.social-list li:nth-child(3) a:hover {
 }
 
 .service:hover .icon {
-    color: #0040ff;
+    color: red;
     -webkit-transform: translateX(-20px);
     transform: translateX(-20px);
 }
@@ -639,7 +640,7 @@ ul.social-list li:nth-child(3) a:hover {
 .service h5 {
     font-size: 12px;
     text-transform: uppercase;
-    color: #0040ff;
+    color: red;
     margin: 0 0 6px 0;
 }
 
@@ -687,15 +688,15 @@ ul.social-list li:nth-child(3) a:hover {
 /* Tab active state */
 
 #services-tabs ul li.r-tabs-state-active a {
-    color: #0040ff;
+    color: red;
     font-weight: 700;
-    border-bottom: 3px solid #0040ff;
+    border-bottom: 3px solid red;
     padding-bottom: 5px;
     -webkit-transition: border-color 300ms linear;
     transition: border-color 300ms linear;
 }
 
-.service-tab .col-md-6 {
+.service-tab .col-md-12 {
     padding: 0;
 }
 
@@ -708,6 +709,8 @@ ul.social-list li:nth-child(3) a:hover {
     background: #fff;
     padding: 59px 30px;
     min-height: 481px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
 }
 
 .service-tab h2 {
@@ -1316,10 +1319,13 @@ footer p span {
 ============================================ */
 
 .navbar {
-    padding: 35px 0 20px 0;
+    padding: 10px 0 20px 0;
     -webkit-transition: all 300ms linear;
     transition: all 300ms linear;
     border: none !important;
+    background: linear-gradient(0, transparent, rgba(0,0,0,0.9));
+
+
 }
 
 .site-nav-wrapper {
@@ -1360,8 +1366,13 @@ ul.navbar-nav>li>a {
 ul.navbar-nav>li>a:hover,
 ul.navbar-nav>li>a:focus {
     background: none;
-    color: red;
-    animation: bounce 1s;
+    color: #ffa500;
+    border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  animation-name: example;
+  animation-duration: 0.25s;
+  border-left: 8px solid #ffa500;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
 
@@ -1370,8 +1381,11 @@ ul.navbar-nav>li>a:focus {
 /* White Navigation */
 
 .white-nav-top {
+    padding: 10px 0 20px 0;
+    -webkit-transition: all 300ms linear;
+    transition: all 300ms linear;
+    border: none !important;
     background: linear-gradient(0, transparent, rgba(0,0,0,0.9));
-    padding: 10px 0;
     z-index: 2;
 }
 
@@ -1380,7 +1394,7 @@ ul.navbar-nav>li>a:focus {
 }
 
 .white-nav-top ul.navbar-nav>li>a:hover {
-    color: red;
+    color: #ffa500;
 }
 
 
@@ -1438,3 +1452,62 @@ ul.navbar-nav>li>a:focus {
     -webkit-animation-delay: 3s;
     animation-delay: 3s;
 }
+
+ul li ul{
+  visibility: hidden;
+  opacity: 0;
+  min-width: 5rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  display: none;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  list-style-type: none;
+  padding:0;
+  z-index: 100;
+  
+  
+
+}
+
+ul li ul a{
+    
+    color:#fff !important;
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: bold !important;
+
+
+
+    
+}
+
+ul li ul a:hover{
+    color: #ffa500 !important;
+    text-decoration: none;
+    background: none !important;
+
+
+
+    
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+
+  visibility: visible;
+  opacity: 1;
+  display: block;
+  border: 1px groove #ffa500;
+  border-radius: 15px !important;
+  background: rgba(0,0,0,0.7);
+  
+   
+}
+
+
+
+
+   
