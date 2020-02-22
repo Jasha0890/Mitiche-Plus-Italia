@@ -344,6 +344,8 @@ section {
 #about-right p{
 
     font-weight: 900;
+    font-size: 16px;
+    text-align: justify;
 }
 
 #about-bottom {
